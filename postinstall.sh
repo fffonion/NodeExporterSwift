@@ -1,6 +1,6 @@
 #!/bin/sh
 
-launchdID="org.rskgroup.smc_exporter"
+launchdID="io.prometheus.node_exporter_swift"
 
 if launchctl list "$launchdID"; then
 	launchctl bootout system/"$launchdID"
