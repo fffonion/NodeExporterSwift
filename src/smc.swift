@@ -162,7 +162,7 @@ public class SMC {
         let device: io_object_t
         
         let matchingDictionary: CFMutableDictionary = IOServiceMatching("AppleSMC")
-        result = IOServiceGetMatchingServices(kIOMainPortDefault, matchingDictionary, &iterator)
+        result = IOServiceGetMatchingServices(kIOMasterPortDefault, matchingDictionary, &iterator)
         if result != kIOReturnSuccess {
             print("Error IOServiceGetMatchingServices(): " + (String(cString: mach_error_string(result), encoding: String.Encoding.ascii) ?? "unknown error"))
             return

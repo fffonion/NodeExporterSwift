@@ -172,8 +172,10 @@ class SystemMetrics {
         let inactivePages = UInt64(vmStat.inactive_count)
         let wiredPages = UInt64(vmStat.wire_count)
         let compressedPages = UInt64(vmStat.compressor_page_count)
+        let purgeable = UInt64(vmStat.purgeable_count)
+        let external = UInt64(vmStat.external_page_count)
         
-        let usedPages = activePages + inactivePages + wiredPages + compressedPages
+        let usedPages = activePages + inactivePages + wiredPages + compressedPages - purgeable - external
         let cachedPages = inactivePages
         let availablePages = freePages + inactivePages
         
@@ -281,6 +283,10 @@ extension SystemMetrics {
             result.append("# HELP node_memory_MemAvailable_bytes Memory information field MemAvailable_bytes.")
             result.append("# TYPE node_memory_MemAvailable_bytes gauge")
             result.append("node_memory_MemAvailable_bytes{computername=\"\(hostname)\"} \(memUsage.available)")
+            
+            result.append("# HELP node_memory_MemUsed_bytes Memory information field MemAvailable_bytes.")
+            result.append("# TYPE node_memory_MemUsed_bytes gauge")
+            result.append("node_memory_MemUsed_bytes{computername=\"\(hostname)\"} \(memUsage.used)")
             
             result.append("# HELP node_memory_Cached_bytes Memory information field Cached_bytes.")
             result.append("# TYPE node_memory_Cached_bytes gauge")
