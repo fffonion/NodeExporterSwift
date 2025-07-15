@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.rskgroup.smc_exporter</string>
+	<string>io.prometheus.node_exporter_swift</string>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>KeepAlive</key>
 	<true/>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/smc_exporter</string>
+		<string>/usr/local/bin/node_exporter_swift</string>
 		<string>9119</string>
 		<string>temperatures</string>
 	</array>

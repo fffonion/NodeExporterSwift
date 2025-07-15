@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0753A72F2BC4498A00777837"
-               BuildableName = "smc_exporter"
-               BlueprintName = "smc_exporter"
-               ReferencedContainer = "container:smc_exporter.xcodeproj">
+               BuildableName = "node_exporter_swift"
+               BlueprintName = "node_exporter_swift"
+               ReferencedContainer = "container:NodeExporterSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0753A72F2BC4498A00777837"
-            BuildableName = "smc_exporter"
-            BlueprintName = "smc_exporter"
-            ReferencedContainer = "container:smc_exporter.xcodeproj">
+            BuildableName = "node_exporter_swift"
+            BlueprintName = "node_exporter_swift"
+            ReferencedContainer = "container:NodeExporterSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0753A72F2BC4498A00777837"
-            BuildableName = "smc_exporter"
-            BlueprintName = "smc_exporter"
-            ReferencedContainer = "container:smc_exporter.xcodeproj">
+            BuildableName = "node_exporter_swift"
+            BlueprintName = "node_exporter_swift"
+            ReferencedContainer = "container:NodeExporterSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
